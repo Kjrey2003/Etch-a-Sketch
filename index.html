@@ -13,20 +13,23 @@
   <div class="flex-container">
     <div class="title"></div>
     <div class="content">
-        <div class="pad">
-            <div class="button">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
+       
+         <div class="button">
+                <button id="black">Black</button>
+                <button id="white">White</button>
+                <button id="randomColor">Random</button>
+                <button onclick="window.location.reload();" id="Reset">Reset</button>
                 <div>
-                    <input type="text" placeholder="Size of Board" value="16">
-                    <button>Set Size</button>
+                    <input type="text" placeholder="Size of Board" value="16" id="userSize">
+                    <button onclick="   putStuff(document.getElementById('userSize').value)">Set Size</button>
                 </div>
             </div>
         </div>
     </div>
   </div>
+                              <div class="pad"></div>
+ 
+
   <script src="stuff.js"></script>
    
 </body>
