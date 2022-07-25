@@ -1,11 +1,25 @@
+.button{
+    display: grid;
+    justify-content: center;
+    background-color: lightpink;
+}
+
 .pad{
     width: 500px;
     height: 500px;
     display: grid;
+    
+
    
    
 }
 
 .pad.hover{
     color: black;
+}
+
+#color_canvas{
+    display: flex;
+    justify-items: right;
+   left: 100px;
 }

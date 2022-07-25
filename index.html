@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel ="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="colorjoe/colorjoe.css">
+    
    
 </head>
 <body>
@@ -15,23 +17,33 @@
     <div class="content">
        
          <div class="button">
-                <button id="black">Black</button>
-                <button id="white">White</button>
-                <button id="randomColor">Random</button>
+                      <h1 style="text-align: center; font-size: xxx-large">ETCH A SKETCH</h1>
                 <button onclick="window.location.reload()" id="Reset">Reset</button>
                 <div>
-                    <input type="text" placeholder="Size of Board" value="16" id="userSize">
+                   <p id="instructions">Put the desired size of the box and press set size</p> <input type="text" placeholder="Size of Board" value="16" id="userSize">
                     <button onclick="   putStuff(document.getElementById('userSize').value)">Set Size</button>
+                    <script>
+                      
+                    </script>
                 </div>
             </div>
-        </div>
+          </div>
     </div>
   </div>
-                              <div class="pad"></div>
+                
+  <div class="pad" mouseover=""></div>
  
 
+    <div style="text-align: center">
+        <input type="color" id="color">
+    </div>
+
+
+
+                              
+
   <script src="stuff.js"></script>
-   
+  <script>src="colorjoe/colorjoe.min.jss"</script>
 </body>
 
 
