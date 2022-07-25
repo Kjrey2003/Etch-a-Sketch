@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch-a-Sketch</title>
     <link rel ="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="colorjoe/colorjoe.css">
+    
     
    
 </head>
 <body>
   <div class="flex-container">
-    <div class="title"></div>
     <div class="content">
-       
-         <div class="button">
-                      <h1 style="text-align: center; font-size: xxx-large">ETCH A SKETCH</h1>
-                <button onclick="window.location.reload()" id="Reset">Reset</button>
-                <div>
-                   <p id="instructions">Put the desired size of the box and press set size</p> <input type="text" placeholder="Size of Board" value="16" id="userSize">
-                    <button onclick="   putStuff(document.getElementById('userSize').value)">Set Size</button>
-                    <script>
-                      
-                    </script>
-                </div>
-            </div>
+       <div class="button">
+            <h1 style="text-align: center; font-size: xxx-large">ETCH A SKETCH</h1>
+            <button onclick="window.location.reload()" id="Reset">Reset</button>
+            <div>
+               <p id="instructions">Put the desired size of the box and press set size</p> <input type="text" placeholder="Size of Board" value="16" id="userSize">
+                <button style="align-items: center" onclick=" putStuff(document.getElementById('userSize').value)">Set Size</button>
+             </div>
           </div>
+       </div>
+     </div>
     </div>
-  </div>
-                
-  <div class="pad" mouseover=""></div>
- 
+    
+    <div class="padwrapper">            
+       <div class="pad" mouseover=""></div>
+    </div>
 
-    <div style="text-align: center">
+    <div class="colorWrap" style="text-align: center">
         <input type="color" id="color">
     </div>
 
@@ -43,8 +39,7 @@
                               
 
   <script src="stuff.js"></script>
-  <script>src="colorjoe/colorjoe.min.jss"</script>
-</body>
+  </body>
 
 
 </html>

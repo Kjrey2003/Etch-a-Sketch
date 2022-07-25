@@ -1,7 +1,5 @@
-
 const instruct = document.getElementById("instructions");
 var old = instruct.innerHTML;
-
 
 let square = document.createElement('div');
  function putStuff(size){
@@ -9,7 +7,6 @@ let square = document.createElement('div');
         document.getElementById('instructions').innerHTML = "Oops! The box cannot be bigger than 80, please reset and enter another number";
         return;
     }
-
 let board = document.querySelector(".pad");
  let squares = board.querySelectorAll("div");
  squares.forEach((div) => div.remove());

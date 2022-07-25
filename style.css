@@ -1,3 +1,10 @@
+html body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+
+
 .button{
     display: grid;
     justify-content: center;
@@ -8,14 +15,15 @@
     width: 500px;
     height: 500px;
     display: grid;
-    
-
-   
-   
 }
-
-.pad.hover{
-    color: black;
+.padwrapper{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+      
 }
 
 #color_canvas{
@@ -23,3 +31,16 @@
     justify-items: right;
    left: 100px;
 }
+
+input[type="color"] {
+    -webkit-appearance: none;
+   width: 80px;
+    height: 80px; 
+    border: none;
+
+  }
+ .colorWrap{
+    display: flex;
+    position: relative;
+    padding-bottom: 500px;
+ }
